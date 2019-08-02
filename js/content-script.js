@@ -1,3 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('我被执行了！');
+document.addEventListener('mouseup', function() {
+    // let text = window.getSelection().toString(); //获取被选中的文字
+    document.execCommand('copy');
 });
