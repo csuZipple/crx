@@ -1,3 +1,6 @@
 body{
     background: lightblue;
 }
+*{
+    user-select: text !important; /*允许所有dom节点被选中*/
+}
