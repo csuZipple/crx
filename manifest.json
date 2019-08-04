@@ -2,7 +2,7 @@
   "name": "Zipple's own extension",
   "version": "1.0",
   "description": "My custom browser.",
-  "permissions": ["storage"],
+  "permissions": ["storage", "contextMenus", "tabs"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
