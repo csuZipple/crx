@@ -1,6 +1,4 @@
-document.addEventListener('mouseup', function() {
-    let text = window.getSelection().toString(); //获取被选中的文字
-    if(text){
-        document.execCommand('copy');
-    }
+const excludes = ['https://mp.csdn.net/mdeditor'];
+document.addEventListener('mouseup', () => {
+    excludes.some(url => location.href.indexOf(url) !== -1) && window.getSelection().toString() && document.execCommand('copy');
 });
