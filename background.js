@@ -1,8 +1,3 @@
-chrome.runtime.onInstalled.addListener(function() {
-    chrome.storage.sync.set({color: '#3aa757'}, function() {
-        console.log("The color is green.");
-    });
-});
 chrome.contextMenus.create({
     id: 'baidu-search',
     title: '使用度娘搜索：%s',
