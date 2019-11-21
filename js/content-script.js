@@ -15,3 +15,17 @@ document.addEventListener('mouseup', () => {
     && document.execCommand('copy');
 });
 injectJs();
+
+console.log(`
+【注意】：本插件修改了部分全局样式，请在业务开发网页禁用此插件。
+
+【样式】：
+    body{
+        background: lightblue;
+    }
+    *{
+        user-select: text !important; /*允许所有dom节点被选中*/
+    }
+    --------------------------------------------------------
+    Made by Zipple.
+`);
